@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkers: A two player board game</title>
+        <link rel="stylesheet"  href="stylesheets/SplashScreen.css">
+        <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+
+        
+    </head>
+
+    <body>
+        <main>
+            <section id=left>
+                <h2 id="rules">Rules</h2>
+                <ul>
+                    <li>The object of the game is to capture all of your opponent’s checkers or position your pieces so that your opponent has no available moves. </li>
+                    <li>A checker can move one space diagonally forward. You can not move a checker backwards until it becomes a King. If a jump is available, you must take the jump.</li>
+                    <li>If one of your opponent’s checkers is on a forward diagonal next to one of your checkers, and the next space beyond the opponent’s checker is empty, then your checker must jump the opponent’s checker and land in the space beyond. Your opponent’s checker is captured and removed from the board. </li>
+                    <li>After making one jump, your checker might have another jump available from its new position. Your checker must take that jump too. It must continue to jump until there are no more jumps available.</li>
+                    <li>When one of your checkers reaches the opposite side of the board, it is crowned and becomes a King. A King can move backward as well as forward along the diagonals. It can only move a distance of one space. A King can also jump backward and forward. </li>
+                </ul>                    
+            </section>
+
+            <section id=center>
+                <h1 id="title">Checkers</h1>
+                <img id="background-img" src="images/background.jpg">
+                <form  action="/game" method="get">
+                    <input type="image" id="button" src="images/play.png">
+                </form>
+                <p id="resolution">SCREEN RESOLUTION IS NOT BIG ENOUGH!</p>
+            </section>
+
+            <section id=right>
+                
+                    <h2 id="stats-header" data-hover='Here are some interesting stats!' >Statistics</h2>
+                    <div id="stats" ></div>
+                </section>
+        </main>
+    </body>
+
+</html>

@@ -1,0 +1,146 @@
+@import 'style.css';
+
+@media screen and (max-height: 720px) ,(max-width: 1500px) {
+    
+    body{
+        visibility: hidden ;
+    }
+    #resolution{
+        text-align: center;
+        position:fixed;
+        top:300px;
+        font-size: 50px;
+        visibility: visible !important;
+    }
+}
+
+
+
+    body{
+        background-color: lightgray;
+    }
+    #center{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #title:not(:fullscreen){
+        font-family: 'Monoton', cursive;
+        font-size: 70px;
+        margin-top:-30px;
+        margin-bottom:10px;
+        text-align: center;
+    }
+    #title:fullscreen {
+        font-size: 200px;
+      }
+
+    li:active{
+        
+        font-size:20px;
+    }
+    
+    #stats-header:hover::after{
+
+        content:attr(data-hover);
+        font-size:12px;
+        color:red;
+       
+        position: relative;
+        bottom:30px;
+        left:10px;
+        border-style:dashed;
+        padding:2px;
+
+    }
+    #rules:hover::before{
+
+        content:attr(data-beforeRules);
+        font-size:12px;
+        color:red;
+       
+        position: relative;
+        bottom:30px;
+        right:5px;
+        border-style:dotted;
+        padding:2px;
+
+    }
+    #button{
+    
+        width:90px;
+        height:90px;
+    
+        position: fixed;
+        right:330px;
+        top:400px;
+        transition: width 2s, height 2s, background-color 2s, transform 2s;
+    }
+    
+    #button:hover{
+        
+        transform: rotate(150deg);
+    }
+        
+    
+    #left{
+        float:left;
+        position: absolute;
+        top:100px;
+    
+        max-width: 450px;
+    }
+    
+    #right{
+        position:relative;
+        left: 1300px;
+        top: 55px;
+        max-width: 500px;
+    }
+    
+    li{
+        margin: 0 0 40px 0;
+    
+    }
+    
+    #rules{
+        text-align: right;
+        position:relative;
+        right:156px;
+        margin-bottom: 20px;
+        
+        
+    }
+    h2{
+        font-size:35px;
+    
+    }
+    #background-img{
+        width:95%;
+        height:95%;
+    }
+    #resolution{
+        visibility: hidden;
+    }
+    
+    @keyframes comeDown {
+        from {
+          transform: translate(0px, -1000px)
+        }
+    
+        to   {
+          transform: translate(0px, 0px)
+        }
+      }
+    
+      #right, #rules {
+        animation: comeDown 1.3s;
+      }
+    
+      #stats{
+        padding:15px;
+    
+      }
+      
+

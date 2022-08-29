@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkers: A two player board game</title>
+        <link rel="stylesheet" href="stylesheets/GameScreen.css">
+        <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <section id=left>
+                <h2 id=info></h2>
+                <div id="red-counter">
+                        <img class="info" src="images/red-checker.png">
+                        <p id="redcount">0</p>
+                    </div>
+                    <div id="black-counter">
+                            <img class="info" src="images/black-checker.png">
+                            <p id="blackcount">0</p>
+                        </div>
+            </section>
+
+            <section id=board>
+                <p id="resolution">SCREEN RESOLUTION IS NOT BIG ENOUGH!</p>
+                <div id="waiting">
+                        <div id="w">WAITING</div><p> </p><div id="f">FOR</div> <div id="p">PLAYERS</div>
+                   
+                </div>
+                <div id=row1 class= "rows">
+                        <div id="00" class="tile"></div>
+                        <div id="01" class="tile"><img src="images/black-checker.png"></div>
+                        <div id="02" class="tile"></div>
+                        <div id="03" class="tile"><img src="images/black-checker.png"></div>
+                        <div id="04" class="tile"></div>
+                        <div id="05" class="tile"><img src="images/black-checker.png"></div>
+                        <div id="06" class="tile"></div>
+                        <div id="07" class="tile"><img src="images/black-checker.png"></div>
+                </div>
+                <div id=row2 class= "rows">
+                        <div id="10" class="tile"><img src="images/black-checker.png"></div>
+                        <div id="11" class="tile"></div>
+                        <div id="12" class="tile"><img src="images/black-checker.png"></div>
+                        <div id="13" class="tile"></div>
+                        <div id="14" class="tile"><img src="images/black-checker.png"></div>
+                        <div id="15" class="tile"></div>
+                        <div id="16" class="tile"><img src="images/black-checker.png"></div>
+                        <div id="17" class="tile"></div>
+                </div>
+                <div id=row3 class= "rows">
+                        <div id="20" class="tile"></div>
+                        <div id="21" class="tile"><img src="images/black-checker.png"></div>
+                        <div id="22" class="tile"></div>
+                        <div id="23" class="tile"><img src="images/black-checker.png"></div>
+                        <div id="24" class="tile"></div>
+                        <div id="25" class="tile"><img src="images/black-checker.png"></div>
+                        <div id="26" class="tile"></div>
+                        <div id="27" class="tile"><img src="images/black-checker.png"></div>
+                </div>
+                <div id=row4 class= "rows">
+                        <div id="30" class="tile"></div>
+                        <div id="31" class="tile"></div>
+                        <div id="32" class="tile"></div>
+                        <div id="33" class="tile"></div>
+                        <div id="34" class="tile"></div>
+                        <div id="35" class="tile"></div>
+                        <div id="36" class="tile"></div>
+                        <div id="37" class="tile"></div>
+                </div>
+                <div id=row5 class= "rows">
+                        <div id="40" class="tile"></div>
+                        <div id="41" class="tile"></div>
+                        <div id="42" class="tile"></div>
+                        <div id="43" class="tile"></div>
+                        <div id="44" class="tile"></div>
+                        <div id="45" class="tile"></div>
+                        <div id="46" class="tile"></div>
+                        <div id="47" class="tile"></div>
+                </div>
+                <div id=row6 class= "rows">
+                        <div id="50" class="tile"><img src="images/red-checker.png"></div>
+                        <div id="51" class="tile"></div>
+                        <div id="52" class="tile"><img src="images/red-checker.png"></div>
+                        <div id="53" class="tile"></div>
+                        <div id="54" class="tile"><img src="images/red-checker.png"></div>
+                        <div id="55" class="tile"></div>
+                        <div id="56" class="tile"><img src="images/red-checker.png"></div>
+                        <div id="57" class="tile"></div>  
+                </div>
+                <div id=row7 class= "rows">
+                        <div id="60" class="tile"></div>
+                        <div id="61" class="tile"><img src="images/red-checker.png"></div>
+                        <div id="62" class="tile"></div>
+                        <div id="63" class="tile"><img src="images/red-checker.png"></div>
+                        <div id="64" class="tile"></div>
+                        <div id="65" class="tile"><img src="images/red-checker.png"></div>
+                        <div id="66" class="tile"></div>
+                        <div id="67" class="tile"><img src="images/red-checker.png"></div>
+                </div>
+                <div id=row8 class= "rows">
+                        <div id="70" class="tile"><img src="images/red-checker.png"></div>
+                        <div id="71" class="tile"></div>
+                        <div id="72" class="tile"><img src="images/red-checker.png"></div>
+                        <div id="73" class="tile"></div>
+                        <div id="74" class="tile"><img src="images/red-checker.png"></div>
+                        <div id="75" class="tile"></div>
+                        <div id="76" class="tile"><img src="images/red-checker.png"></div>
+                        <div id="77" class="tile"></div>
+                </div>
+
+               
+            </section>
+            <section id='right'>
+                <form  action="/splash" method="get">
+                        <input type="image" id="back" src="images/home-button.png">
+                </form>
+                <img id="fs" src="images/fullscreen.png">
+                   
+                <h2 id='cookie-info'></h2>
+
+            </section>
+
+        </main>
+        <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+        
+        <script src="javascripts/Interaction.js"></script>
+
+
+
+    </body>
+
+</html>
